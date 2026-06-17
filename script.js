@@ -35,3 +35,10 @@ function closeModal() {
     document.getElementById(`your-modal`).style.display = `none`;
     document.body.classList.remove(`modal-open`);
 }
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("送信しました");
+});
